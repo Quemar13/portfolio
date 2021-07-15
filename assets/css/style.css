@@ -1,0 +1,240 @@
+/*Polices*/
+
+    @font-face
+        {
+        font-family: 'montserrat_alternatesregular';
+        src: url('../polices/montserrat/montserratalternates-regular-webfont.woff2') format('woff2'),
+            url('../polices/montserrat/montserratalternates-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;  
+        }
+    
+    @font-face 
+        {
+        font-family: 'montserratalertnates_bold';
+        src: url('../polices/montserrat_bold/montserratalternates-bold-webfont.woff2') format('woff2'),
+            url('../polices/montserrat_bold/montserratalternates-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;    
+        }
+
+    @font-face     
+        {
+        font-family: 'amaticbold';
+        src: url('../polices/amatic/amatic-bold-webfont.woff2') format('woff2'),
+            url('../polices/amatic/amatic-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;   
+        }
+
+    @font-face    
+        {
+        font-family: 'acherusgrotesque';
+        src: url('../polices/acherusgrotesque/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+            url('../polices/acherusgrotesque/acherusgrotesque-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;  
+        }
+
+/*Tous les élements*/
+
+    body{
+        position: relative;
+        }
+    * 
+        {
+        box-sizing: border-box;
+        }
+    span
+        {
+        font-family: 'montserratalertnates_bold';
+        }
+        
+/*Effet AOS*/
+
+    #frontend:hover,#backend:hover,#p1:hover,#p2:hover,#p3:hover,#p4:hover,#p5:hover,#p6:hover,#p7:hover,#icones div:hover
+        {
+        animation:pulse;
+        animation-duration: 1s; 
+        }
+    #back-to-top:hover
+        {
+        animation:heartBeat;
+        animation-duration: 1s;
+        }
+    
+
+/*Titres*/
+
+    h1
+        {
+        font-family: 'amaticbold';
+        font-size: 70px;
+        line-height: 72px;
+        letter-spacing: -0.015em;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+    h2
+        {
+        font-family: 'acherusgrotesque';
+        text-transform: uppercase;
+        font-size: 25px;
+        line-height: 72px;
+        letter-spacing: -0.015em;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+ /*Menu*/     
+
+        nav
+        {
+        background:#AA3939;
+        text-transform: uppercase;
+        }
+
+/*Header*/
+
+    header
+        {
+        background:linear-gradient(to right top, #46b3b3, #3ca8a8, #319c9c, #269191, #198686, #198686, #198686, #198686, #269191, #319c9c, #3ca8a8, #46b3b3);
+        min-height: 80vh;
+        }
+
+    #avatar
+        {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+    .nav-link
+        {
+        width:25vh;
+        background-color: #D7786E !important;
+        font-family:'acherusgrotesque' !important;
+        border:none;
+        font-size: 15px;
+        letter-spacing: -0.015em;
+        }
+    .nav-link:hover
+        {
+        background-color:#FFB2AA !important;
+        text-decoration: underline;
+        }
+    .nav-link.active 
+        {
+        background-color:#FFB2AA !important;
+        }
+
+
+/*À propos*/
+
+    #a_propos
+        {
+        min-height: 50vh;
+        }
+
+    #a_propos p
+        {
+        font-family: 'montserrat_alternatesregular';
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.015em;      
+        color: rgba(0, 0, 0, 0.8);
+        }
+
+/*Mes compétences*/
+
+    #scrollspyHeading2
+        {
+        background-color: #DADBDB;
+        }
+
+
+    #competences
+        {
+        font-family: 'montserrat_alternatesregular';   
+        min-height: 50vh;
+        overflow: hidden; /*Pour rendre l'effet AOS responsive*/
+        }
+    
+    #competences img
+        {
+        width: 20vh;
+        }
+
+
+/*Mes diplômes*/
+
+    #diplomes
+        {
+        font-family: 'montserrat_alternatesregular';
+        min-height: 50vh;
+        }
+
+
+/*Expériences*/
+
+    #scrollspyHeading4
+        {
+        background-color: #DADBDB;
+        }
+    #experiences
+        {
+        font-family: 'montserrat_alternatesregular';
+        min-height: 70vh;
+        overflow: hidden; /*Pour rendre l'effet AOS responsive*/
+        }
+
+
+/*Intêrets*/
+
+    #interets
+        {
+        font-family: 'montserrat_alternatesregular';
+        }
+
+    #interets img
+        {
+        width: 10vh;
+        }
+
+/*Pied de page*/
+
+    footer
+        {
+        background-image: url("../img/wave.svg");
+        background-size: cover;
+        height: 60vh;
+        }
+
+    #bouton1,#bouton2
+        {
+        width:30vh;
+        position: relative;
+        top: 70%;
+        background-color: #D7786E;
+        font-family:'acherusgrotesque';
+        border:none;
+        font-size: 15px;
+        letter-spacing: -0.015em;
+        }
+
+    #bouton1:hover,#bouton2:hover
+        {
+        background-color: #FFB2AA;
+        animation:heartBeat;
+        animation-duration: 1s;
+        }
+
+    #back-to-top
+        {
+        position : fixed;
+        bottom: 40px;
+        right: 20px;
+        width: 50px;
+        height: 40px;
+        font-size:25px;
+        color: black;
+        z-index:1; /*Pour rendre visible sur le footer*/
+        display: none;
+        }
